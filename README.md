@@ -1,60 +1,48 @@
-# CodeIgniter 4 Framework
+# Laporan Tugas Praktikum Pemrograman Mobile
+**Nama:** Khaila salsa marfah bilqis
+**NIM:** [H1D023014]
+**Pertemuan:** 10 (CRUD 1)
 
-## What is CodeIgniter?
+---
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+## A. Pengujian Backend (Rest API)
+Berikut adalah bukti bahwa REST API CodeIgniter 4 telah berjalan dan berhasil diuji menggunakan Postman.
 
-This repository holds the distributable version of the framework.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+### 1. Registrasi & Login
+Proses pendaftaran user baru dan pengambilan token akses.
+![Bukti Registrasi](screenshots_api/registrasi.png)
+![Bukti Login](screenshots_api/login.png)
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+### 2. CRUD Produk
+Proses Create (Tambah), Read (Lihat), dan Delete (Hapus) data produk.
+![Bukti Tambah Produk](screenshots_api/create_produk.png)
+![Bukti List Produk](screenshots_api/list_produk.png)
 
-You can read the [user guide](https://codeigniter.com/user_guide/)
-corresponding to the latest version of the framework.
+---
 
-## Important Change with index.php
+## B. Implementasi UI Flutter (Personalisasi)
+Berikut adalah tampilan aplikasi Flutter yang telah dimodifikasi dengan menambahkan identitas pada setiap Action Bar.
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+### 1. Login & Registrasi
+Halaman autentikasi pengguna.
+* **Login Page:** Meminta input email & password. Judul diubah menjadi "Login Khaila".
+* **Registrasi Page:** Form pendaftaran user. Judul diubah menjadi "Registrasi Khaila".
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+![Screenshot Login](screenshots_app/login_khaila.png)
+![Screenshot Registrasi](screenshots_app/registrasi_khaila.png)
 
-**Please** read the user guide for a better explanation of how CI4 works!
+### 2. Manajemen Produk
+Halaman pengelolaan data barang.
+* **List Produk:** Menampilkan daftar barang dummy. Judul: "List Produk Khaila".
+* **Detail Produk:** Menampilkan info lengkap barang. Judul: "Detail Produk Khaila".
+* **Form Produk:** Halaman dinamis untuk Tambah/Ubah barang. Judul menyesuaikan, misal "TAMBAH PRODUK KHAILA".
 
-## Repository Management
+![Screenshot List Produk](screenshots_app/list_khaila.png)
+![Screenshot Detail Produk](screenshots_app/detail_khaila.png)
+![Screenshot Form Produk](screenshots_app/form_khaila.png)
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+---
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
-
-## Contributing
-
-We welcome contributions from the community.
-
-Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/CONTRIBUTING.md) section in the development repository.
-
-## Server Requirements
-
-PHP version 8.1 or higher is required, with the following extensions installed:
-
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
-
-> [!WARNING]
-> - The end of life date for PHP 7.4 was November 28, 2022.
-> - The end of life date for PHP 8.0 was November 26, 2023.
-> - If you are still using PHP 7.4 or 8.0, you should upgrade immediately.
-> - The end of life date for PHP 8.1 will be December 31, 2025.
-
-Additionally, make sure that the following extensions are enabled in your PHP:
-
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+## C. Penjelasan Kode Singkat
+1.  **Model (`lib/model`)**: Berisi class `Produk`, `Login`, dan `Registrasi` untuk memetakan format JSON dari API ke objek Dart.
+2.  **UI (`lib/ui`)**: Berisi tampilan antarmuka. Menggunakan widget seperti `TextFormField` untuk input dan `ElevatedButton` untuk aksi. Logika validasi form diterapkan menggunakan `GlobalKey<FormState>`.
