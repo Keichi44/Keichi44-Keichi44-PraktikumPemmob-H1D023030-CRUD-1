@@ -2,6 +2,7 @@
 **Nama:** Khaila salsa marfah bilqis
 **NIM:** H1D023030
 **Pertemuan:** 10 (CRUD 1)  
+shift H/C
 
 ---
 
