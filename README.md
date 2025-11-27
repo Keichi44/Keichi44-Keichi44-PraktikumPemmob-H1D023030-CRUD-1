@@ -14,7 +14,7 @@ Proses pendaftaran user baru dan pengambilan token akses.
 ![Bukti Login](screenshots_api/login.png)
 
 ### 2. CRUD Produk
-Proses Create (Tambah), Read (Lihat), dan Delete (Hapus) data produk.
+Proses Create (Tambah), Read (Lihat), 
 ![Bukti Tambah Produk](screenshots_api/create_produk.png)
 ![Bukti List Produk](screenshots_api/list_produk.png)
 
