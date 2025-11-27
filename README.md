@@ -28,8 +28,8 @@ Halaman autentikasi pengguna.
 * **Login Page:** Meminta input email & password. Judul diubah menjadi "Login Khaila".
 * **Registrasi Page:** Form pendaftaran user. Judul diubah menjadi "Registrasi Khaila".
 
-![Screenshot Login](screenshots_app/login_khaila.png)
-![Screenshot Registrasi](screenshots_app/registrasi_khaila.png)
+![Screenshot Login](screenshots_api/login_khaila.png)
+![Screenshot Registrasi](screenshots_api/registrasi_khaila.png)
 
 ### 2. Manajemen Produk
 Halaman pengelolaan data barang.
@@ -37,9 +37,9 @@ Halaman pengelolaan data barang.
 * **Detail Produk:** Menampilkan info lengkap barang. Judul: "Detail Produk Khaila".
 * **Form Produk:** Halaman dinamis untuk Tambah/Ubah barang. Judul menyesuaikan, misal "TAMBAH PRODUK KHAILA".
 
-![Screenshot List Produk](screenshots_app/list_khaila.png)
-![Screenshot Detail Produk](screenshots_app/detail_khaila.png)
-![Screenshot Form Produk](screenshots_app/form_khaila.png)
+![Screenshot List Produk](screenshots_api/list_khaila.png)
+![Screenshot Detail Produk](screenshots_api/detail_khaila.png)
+![Screenshot Form Produk](screenshots_api/form_khaila.png)
 
 ---
 
