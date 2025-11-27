@@ -10,9 +10,9 @@ Sebelum diintegrasikan dengan Flutter, REST API CodeIgniter 4 diuji menggunakan 
 
 ### 1. Registrasi & Login
 * **Registrasi:** Mengirim data JSON (`nama`, `email`, `password`) ke endpoint `/registrasi`. Response sukses mengembalikan status 200.
-![Bukti Registrasi](screenshots_api/register.png)
+![Bukti Registrasi](screenshots_api/login.png)
 * **Login:** Mengirim kredensial untuk mendapatkan `token` autentikasi yang akan digunakan untuk request selanjutnya.
-![Bukti Login](screenshots_api/login.png)
+![Bukti Login](screenshots_api/register.png)
 
 ### 2. CRUD Produk
 * **Create:** Menambah produk baru (Kode, Nama, Harga).
@@ -54,7 +54,7 @@ Dashboard utama yang menampilkan daftar barang dagangan.
     * [cite_start]Terdapat *Sidebar Drawer* untuk fitur Logout [cite: 1942-1953].
 * **Modifikasi:** Judul AppBar diset menjadi **"List Produk Khaila"**.
 
-![Screenshot List Produk](screenshots_app/list_khaila.png)
+![Screenshot List Produk](screenshots_api/list_khaila.png)
 
 ### 4. Halaman Detail Produk (`ui/produk_detail.dart`)
 Menampilkan informasi rinci dari produk yang dipilih dari list.
@@ -64,7 +64,7 @@ Menampilkan informasi rinci dari produk yang dipilih dari list.
     * [cite_start]**Tombol Delete:** Memunculkan `AlertDialog` untuk konfirmasi penghapusan data [cite: 1883-1914].
 * **Modifikasi:** Judul AppBar diset menjadi **"Detail Produk Khaila"**.
 
-![Screenshot Detail Produk](screenshots_app/detail_khaila.png)
+![Screenshot Detail Produk](screenshots_api/detail_khaila.png)
 
 ### 5. Halaman Form Produk (`ui/produk_form.dart`)
 Halaman dinamis yang berfungsi ganda (Reusable Widget) untuk menambah atau mengubah data.
@@ -73,4 +73,4 @@ Halaman dinamis yang berfungsi ganda (Reusable Widget) untuk menambah atau mengu
     * [cite_start]**Jika Kosong (Mode Tambah):** Judul menjadi **"TAMBAH PRODUK KHAILA"**, tombol menjadi "SIMPAN", dan form kosong [cite: 1745-1747].
 * **Input:** Menggunakan `TextEditingController` untuk mengelola input Kode, Nama, dan Harga.
 
-![Screenshot Form Produk](screenshots_app/form_khaila.png)
+![Screenshot Form Produk](screenshots_api/form_khaila.png)
